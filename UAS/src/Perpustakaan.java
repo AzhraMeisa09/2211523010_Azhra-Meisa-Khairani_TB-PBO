@@ -98,7 +98,7 @@ public class Perpustakaan {
         for (ItemPerpustakaan item : items) {
             if (item instanceof Buku) {
                 Buku buku = (Buku) item;
-                System.out.println("Kode Item\t: " + buku.getKodeItem());
+                System.out.println("\nKode Item\t: " + buku.getKodeItem());
                 System.out.println("Judul\t\t: " + buku.getJudul());
                 System.out.println("Harga Sewa\t: " + buku.getHargaSewa());
                 System.out.println("Jumlah Halaman\t: " + buku.getJumlahHalaman());
