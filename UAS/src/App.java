@@ -52,10 +52,10 @@ public class App {
 
             try {
                 pilihan = scanner.nextInt();
-                scanner.nextLine(); // Membersihkan buffer scanner
+                scanner.nextLine(); 
             } catch (InputMismatchException e) {
                 System.out.println("Input tidak valid. Masukkan angka.");
-                scanner.nextLine(); // Membersihkan buffer scanner
+                scanner.nextLine(); 
                 pilihan = -1;
             }
 
@@ -97,7 +97,7 @@ public class App {
         } while (pilihan != 0);
     }
 
-    // Metode tambahBuku yang sudah diperbaiki
+    // Metode tambahBuku 
     private static void tambahBuku(Scanner scanner, List<ItemPerpustakaan> perpustakaanItems) {
         System.out.println("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         System.out.println("           INPUT BOOK IN LIBRARY         ");
@@ -122,11 +122,11 @@ public class App {
             System.out.println("=======================================");
         } catch (InputMismatchException e) {
             System.out.println("Input tidak valid. Pastikan format input sesuai.");
-            scanner.nextLine(); // Membersihkan buffer scanner
+            scanner.nextLine(); 
         }
     }
 
-    // Metode tambahCD yang sudah diperbaiki
+    // Metode tambahCD 
     private static void tambahCD(Scanner scanner, List<ItemPerpustakaan> perpustakaanItems) {
         System.out.println("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         System.out.println("            INPUT CD IN LIBRARY          ");
@@ -148,7 +148,7 @@ public class App {
             perpustakaanItems.add(cd);
 
             System.out.println("==========================================");
-            // Setelah menambah CD, tambahkan kode berikut untuk menampilkan biaya sewa dengan jumlah hari tertentu
+            // Setelah menambah CD, tambahkan kode untuk menampilkan biaya sewa dengan jumlah hari tertentu
             System.out.print("Jumlah Hari\t\t\t: ");
             int jumlahHari = scanner.nextInt();
             double biayaSewa = cd.hitungBiayaSewa(jumlahHari);
@@ -156,11 +156,11 @@ public class App {
             System.out.println("==========================================");
         } catch (InputMismatchException e) {
             System.out.println("Input tidak valid. Pastikan format input sesuai.");
-            scanner.nextLine(); // Membersihkan buffer scanner
+            scanner.nextLine(); 
         }
     }
 
-    // Metode tampilkanSemuaItem yang sudah diperbaiki
+    // Metode tampilkanSemuaItem 
     private static void tampilkanSemuaItem(List<ItemPerpustakaan> perpustakaanItems) {
         System.out.println("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         System.out.println("            VIEW ITEM LIBRARY            ");
@@ -169,7 +169,7 @@ public class App {
         System.out.println("=======================================");
     }
 
-    // Metode updateInformasiItem yang sudah diperbaiki
+    // Metode updateInformasiItem 
     private static void updateInformasiItem(Scanner scanner, List<ItemPerpustakaan> perpustakaanItems) {
         System.out.println("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         System.out.println("           UPDATE ITEM LIBRARY           ");
@@ -207,7 +207,7 @@ public class App {
         System.out.println("=======================================");
     }
 
-    // Metode hapusItem yang sudah diperbaiki
+    // Metode hapusItem 
     private static void hapusItem(Scanner scanner, List<ItemPerpustakaan> perpustakaanItems) {
         System.out.println("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         System.out.println("           DELETE ITEM LIBRARY           ");
